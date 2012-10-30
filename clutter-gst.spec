@@ -71,17 +71,17 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS NEWS README
-%attr(755,root,root) %ghost %{_libdir}/libclutter-gst-1.0.so.?
-%attr(755,root,root) %{_libdir}/libclutter-gst-1.0.so.*.*.*
-%{_libdir}/girepository-1.0/ClutterGst-1.0.typelib
+%attr(755,root,root) %ghost %{_libdir}/libclutter-gst-2.0.so.?
+%attr(755,root,root) %{_libdir}/libclutter-gst-2.0.so.*.*.*
+%{_libdir}/girepository-1.0/ClutterGst-2.0.typelib
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libclutter-gst-1.0.so
-%attr(755,root,root) %{_libdir}/gstreamer-0.10/libgstclutter.so
-%{_includedir}/clutter-1.0/clutter-gst
-%{_datadir}/gir-1.0/ClutterGst-1.0.gir
-%{_pkgconfigdir}/clutter-gst-1.0.pc
+%attr(755,root,root) %{_libdir}/libclutter-gst-2.0.so
+%attr(755,root,root) %{_libdir}/gstreamer-1.0/libgstclutter.so
+%{_includedir}/clutter-gst-2.0
+%{_datadir}/gir-1.0/ClutterGst-2.0.gir
+%{_pkgconfigdir}/clutter-gst-2.0.pc
 
 %files apidocs
 %defattr(644,root,root,755)
