@@ -1,19 +1,19 @@
 Summary:	Library integrating clutter with GStreamer
 Name:		clutter-gst
-Version:	2.0.6
+Version:	2.0.8
 Release:	1
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/clutter-gst/2.0/%{name}-%{version}.tar.xz
-# Source0-md5:	35f67cfc75c4aa545db0f8b0a1f0e7a0
+# Source0-md5:	f47abc93ddadcbec6eba347a5298d661
 URL:		http://www.clutter-project.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	clutter-devel
-BuildRequires:	cogl-devel
+BuildRequires:	clutter-devel >= 1.16.0
+BuildRequires:	cogl-devel >= 1.16.0
 BuildRequires:	docbook-dtd412-xml
-BuildRequires:	gobject-introspection-devel
-BuildRequires:	gstreamer-plugins-base-devel
+BuildRequires:	gobject-introspection-devel >= 1.38.0
+BuildRequires:	gstreamer-plugins-base-devel >= 1.2.0
 BuildRequires:	gtk-doc
 BuildRequires:	libtool
 BuildRequires:	pkg-config
