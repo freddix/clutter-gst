@@ -1,11 +1,11 @@
 Summary:	Library integrating clutter with GStreamer
 Name:		clutter-gst
-Version:	2.0.10
-Release:	2
+Version:	2.0.12
+Release:	1
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/clutter-gst/2.0/%{name}-%{version}.tar.xz
-# Source0-md5:	6784d28c742bd04a7b193afd5a7bd560
+# Source0-md5:	3e845093843166001e65e1e4971c1588
 URL:		http://www.clutter-project.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -69,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%{__rm} $RPM_BUILD_ROOT%{_libdir}/gstreamer-*/*.la
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/{,gstreamer-*/}*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
